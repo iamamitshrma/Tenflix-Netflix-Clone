@@ -1,0 +1,24 @@
+//These are abstract scss files import
+@import "./abstracts/function";
+@import "./abstracts/mixin";
+@import "./abstracts/variable";
+
+//These are base scss files import
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+//These are components scss files import
+@import "./components/navbar";
+@import "./components/featured";
+@import "./components/list";
+//list child component css
+@import "./components/listitem";
+
+
+
+//These are pages scss files import
+@import "./pages/home";
+@import "./pages/watch";
+@import "./pages/register";
+@import "./pages/login";

@@ -1,0 +1,66 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba($color-primary, 0) 0%, rgba($color-primary, 1) 100%), url('https://images.pexels.com/photos/5202917/pexels-photo-5202917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            @include flexDirection;
+            justify-content: space-between;
+
+            .logo {
+                height: 40px;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flexDirection;
+        justify-content: center;
+        flex-direction: column;
+
+        form {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;            
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 1);
+
+            input {
+                height: 40px;
+                border-radius: 5px;
+                background-color: $color-gray;
+                padding-left: 10px;
+                border: none;
+                outline: none;
+            }
+
+            button {
+                height: 40px;
+                border-radius: 5px;
+                background-color: $color-red;
+                border: none;
+                cursor: pointer;
+            }
+
+            span, small {
+                b {
+                    cursor: pointer;                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    font-size: 1.6rem;
+    color: $color-white !important;
+}
+
+.featured {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2.2px;
+
+    .category {
+        font-size: 3rem;
+        font-weight: 50;
+        color: $color-white;
+
+        select {
+            color: $color-white;
+        }
+    }
+
+    .info {
+        .buttons {
+            button {
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+.list {
+    .list-title {
+        font-size: 2rem;
+        color: $color-white;
+    }
+}
+
+.list-item {
+    color: $color-white;
+
+    &:hover {
+        .item-info {
+            font-size: 1.2rem;
+            font-weight: 300;
+
+            .icons {
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .item-info-top {
+                font-size: 1.5rem;
+                color: $color-gray;
+            }
+
+            .desc {
+                font-size: 1.2rem;
+                letter-spacing: 1.5px;
+                font-weight: lighter;
+            }
+
+            .genre {
+                font-size: 1.4rem;
+                color: $color-gray;
+            }
+        }
+    }
+}
+
+
+.register {
+    .top {
+        .login-btn {
+            color: $color-white;
+            font-size: 1.6rem;
+        }
+    }
+
+    .container {
+        font-size: 5rem;
+        font-weight: 500;
+        color: $color-white;
+        h2 {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+
+        .input {
+            .register-btn {
+                color: $color-white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+.login {
+    color: $color-white;
+    .container {
+        form {
+            h1 {
+                font-size: 1.2rem;
+            }
+            input {
+                color: $color-white;
+                &::placeholder {
+                    color: lightgray;
+                }
+            }
+
+            button {
+                color: $color-white;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+
+            span, small {
+                b {
+                    color: $color-red;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.466) 50%);
+
+    &.scrolled {
+        background-color: $color-primary;
+    }
+
+    &__container {
+        @include flexDirection;        
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 70px;
+    }
+    
+    &-left {
+        width: 80%;
+        @include flexDirection;
+        img {
+            height: 3rem;
+            margin-right: 2rem;
+            @include mobile {
+                display: none;
+            }
+        }
+        &>nav>ul {
+            width: 100%;
+            @include flexDirection;
+            justify-content: space-between;
+            
+            li {
+                cursor: pointer;
+                @include tablet{
+                    display: none;
+                }
+                &.navbarMainLinks {
+                    @include tablet{
+                        display: block;
+                    }
+
+                    .active {
+                        color: $color-red;
+                    }
+                }
+            }
+
+            :not(:last-child) {
+                margin-right: 1.8rem;
+            }
+         }
+    }
+
+    &-right {
+        @include flexDirection;
+        justify-content: space-between;
+        width: 15%;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .icon {
+            cursor: pointer;
+        }
+
+        .profile {
+            position: relative;
+            .options {
+                display: none;
+            }
+
+            &:hover {
+                .options {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 0;
+                    background-color: $color-primary;
+                    height: 80px;
+                    border-radius: 5px;
+
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
